@@ -1,0 +1,14 @@
+ResponseBody:
+<li>Нагадування 1</li>
+<li>Нагадування 2</li>
+<li>Нагадування 3</li>
+
+ResponseHeaders:
+Accept-Ranges: bytes
+Access-Control-Allow-Credentials: true
+Cache-Control: public, max-age=0
+Connection: keep-alive
+Date: Thu, 02 Jun 2022 08:49:40 GMT
+Etag: W/"69-1810ebf5ece"
+Last-Modified: Sun, 29 May 2022 07:37:11 GMT
+Vary: Origin
