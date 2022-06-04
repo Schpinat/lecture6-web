@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Моя перша сторінка</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Моя перша сторінка</h1>
+  
+  <div class="card">
+    <img class="" src="img/Avatar.jpg" alt="Stas">
+  </div>
+
+  <div class="text">
+    <p> 
+      <br>Hi there!</br>  
+      Let me introduce myself. My name is <b>Stas</b>. <br>During the last year i'm working on position Software QA Engineer.</b>
+      <br>I like my job and I have a goal to grew up my professional skills.</b> <br>If you want to see my projects - please go to my
+      <a href="https://github.com/Schpinat/"> GitHub.</a></b>
+    </p>
+  </div>
+
+
+  
+ 
+  
   <div class="todoList">
-    <h3>Список задач</h3>
+    <h3>Do you want to leave me a message?</h3>
     <ul id="myList">
     </ul>
-    <input type="text" name="newItemInput" id="newItemInput" value placeholder="додати нагадування"> 
-    <input type="button" name="addListItem" value="Додати задачу" id="addListItem">
-    <input type="button" name="loadItems" value="Завантажити задачі" id="loadItems">
-    <input type="button" name="cleanItems" value="Видалити всі нагадування" id="cleanItems">
+    <input type="text" name="newItemInput" id="newItemInput" value placeholder="write youre message here">
+    <input class="button" type="button" name="addListItem" value="Add message" id="addListItem">
+    <input class="button" type="button" name="loadItems" value="Read all messages" id="loadItems">
+    <input class="button" type="button" name="cleanItems" value="Clean all messages" id="cleanItems">
   </div>
   <div id="dataLoader">
 
@@ -22,4 +41,5 @@
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,10 +1,53 @@
-h1 {
-  color: green;                           /* колір шрифту */
-  background: #EEE;                       /* колір фону (16-ричний формат)*/
-  font-family: "Courier New", monospace;  /* шрифт */
-  height: 50px;                           /* висота елементу */
-  width: 50%;                             /* ширина елементу */
-  border: solid black 5px;                /* стиль границі елементу */
-  padding: 20px;                          /* відступ від границі елементу до його контенту*/
-  margin: 20px;                           /* відступ від границі елементу до іншого елементу */
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  margin: 1;
+  background: url("img/pattern.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.card {
+  width: 193px;
+  margin: 0px auto;
+  background-color: rgba(198, 200, 211, 0.993);                     
+  box-shadow: 0 0px 100px rgb(192, 191, 191);
+  border-radius: 50%;
+}
+.button {               /* стилизация по классу*/
+  color: rgb(50, 61, 56);                         
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#newItemInput {         /* стилизация по ИД*/
+  width: 150px; 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.text p {               /* стилизация по классу к дочернему элементу*/
+  color:rgb(65, 134, 100);
+  width: 480px;
+  margin: 3px auto; 
+}
+
+h3 {
+  color: rgb(107, 71, 71);
+  width: 480px;
+  margin: 3px auto;
+  padding: 20px;
+}
+.card-photo {
+  display: block;
+  width: 200;
+  height: 200;
+  margin: 0px auto;
+  border-radius: 50%; 
+}
+.message {
+  color:rgb(81, 88, 85);
+  width: 480px;
+  margin: 3px auto;
+  padding-left: 0%;
+}
+.todoList {
+  width: 520px;
+  margin: 3px auto;
+  padding: 20px; 
 }
