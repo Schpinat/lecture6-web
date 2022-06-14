@@ -1,16 +1,94 @@
-ResponseBody:
-<ul class="message"> 
-<li>Stas, you are cool guy, don't stop! Joseph Biden, President of USA</li>
-<li>SLAVA ZSU! Angela Merkel</li>
-<li>Если бы мы за 6 часов не нанесли первентивный удар, у меня карты с собой... Саша Лукашенко (продам картошку, недорого)</li>
-</ul>
+HTTP/1.1 200 OK
+Server: Rebex Tiny Web Server v1.0.0
+Date: Sun, 05 Jun 2022 01:34:38 GMT
+Accept-Ranges:	bytes
+Access-Control-Allow-Credentials:	true
+Cache-Control:	public, max-age=0
+Connection:	keep-alive
+Date:	Tue, 14 Jun 2022 09:14:54 GMT
+Etag:	W/"53f-1812f17f96c"
+Last-Modified:	Sat, 04 Jun 2022 14:21:49 GMT
+Vary:	Origin
 
-ResponseHeaders:
-Accept-Ranges: bytes
-Access-Control-Allow-Credentials: true
-Cache-Control: public, max-age=0
-Connection: keep-alive
-Date: Thu, 02 Jun 2022 08:49:40 GMT
-Etag: W/"69-1810ebf5ece"
-Last-Modified: Sun, 29 May 2022 07:37:11 GMT
-Vary: Origin
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Моя перша сторінка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div class="card">
+    <img class="" src="img/Avatar.jpg" alt="Stas">
+  </div>
+
+  <div class="text">
+    <p> 
+      <br>Hi there!</br>  
+      Let me introduce myself. My name is <b>Stas</b>. <br>During the last year i'm working on position Software QA Engineer.</b>
+      <br>I like my job and I have a goal to grew up my professional skills.</b> <br>If you want to see my projects - please go to my
+      <a href="https://github.com/Schpinat/"> GitHub.</a></b>
+    </p>
+  </div>
+
+
+  
+ 
+  
+  <div class="todoList">
+    <h3>Do you want to leave me a message?</h3>
+    <ul id="myList">
+    </ul>
+    <input type="text" name="newItemInput" id="newItemInput" value placeholder="write youre message here">
+    <input class="button" type="button" name="addListItem" value="Add message" id="addListItem">
+    <input class="button" type="button" name="loadItems" value="Read all messages" id="loadItems">
+    <input class="button" type="button" name="cleanItems" value="Clean all messages" id="cleanItems">
+  </div>
+  <div id="dataLoader">
+
+    <p id="data"></p>
+  </div>
+  <script src="script.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+
+</html>
