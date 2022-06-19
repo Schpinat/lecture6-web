@@ -12,21 +12,50 @@ body {
   box-shadow: 0 0px 100px rgb(192, 191, 191);
   border-radius: 50%;
 }
-.button {               /* стилизация по классу*/
+.button {             
   color: rgb(50, 61, 56);                         
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-#newItemInput {         /* стилизация по ИД*/
+#newItemInput {        
   width: 150px; 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
-
-.text p {               /* стилизация по классу к дочернему элементу*/
+.text p {             
   color:rgb(65, 134, 100);
   width: 480px;
   margin: 3px auto; 
 }
-
+/*Селектор за идентификатором */
+#myList {
+color: blue;
+}
+/*Селектор за типом */
+h4 {
+  font-weight: lighter;
+}
+/*Селектор за атрибутом */
+[type='text'] {
+background-color: rgb(176, 192, 192);
+}
+/*Селектор за классом */
+.textPage p {              
+  color:rgb(65, 134, 100);
+  width: 480px;
+  margin: 3px auto; 
+}
+/*Селектор по комбинаторам */
+body input#upPage.button {
+  display: block;
+  margin: 0px auto;
+}
+/*Псевдоклассы */
+input[type='button']:hover {
+  background-color: cornflowerblue;
+}
+a:visited
+{
+  background-color: red;
+}
 h3 {
   color: rgb(107, 71, 71);
   width: 480px;

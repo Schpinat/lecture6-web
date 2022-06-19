@@ -31,15 +31,20 @@ document.getElementById('loadItems').addEventListener('click', () => {
   xhttp.send();
 })
 
-
-
-
-
 // Додаємо слухач кліку: метод, що буде виконуватися при кліку на кнопку
 // "Видалити всі нагадування"
 document.getElementById('cleanItems').addEventListener('click', () => {
  // Очищуємо список завдань
    
-  document.getElementById('myList').innerHTML = '';
+  document.getElementById('myList').innerHTML = ''  ;
  
+  
 })
+
+document.getElementById('upPage').addEventListener('click', () => {
+  // Прокрутка
+    
+   document.body.scrollIntoView();
+  
+   
+ })
